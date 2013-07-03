@@ -125,6 +125,14 @@ module.exports = {
 }
 ```
 
+### Testing
+
+Testing Yeoman generators could be much easier.
+Better testing infrastructure means faster iteration which means 
+Testing cannot be an afterthought
+
+TODO
+
 ### Experience
 
 Here is how this flow should feel for generator authors and end users:
@@ -137,3 +145,11 @@ TODO
 
 End users now use a single generator targetting their `Platform` of choice.
 They can then select from a list of installed generators, or optionally grab other ones from `npm`.
+
+## Contributing
+
+Feel free to file issues to ask questions, offer opinions, or suggest improvements.
+PRs are also welcome.
+
+## License
+MIT
