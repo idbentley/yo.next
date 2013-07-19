@@ -11,7 +11,7 @@ From my experiences writing and maintaining `generator-angular` and `generator-k
 ### Combinatorial Complexity of Generators
 
 Using different generators together is complex both for end users and generator authors.
-To illustrate this, let's eximine the end user case and the generator developer case.
+To illustrate this, let's examine the end user case and the generator developer case.
 
 #### End User
 
@@ -82,6 +82,7 @@ Also worth looking at:
 
 * [automation](https://github.com/IndigoUnited/automaton)
 * [astral](https://github.com/btford/astral) (Work-in-progress; planning to use a similar "pipeline" model)
+* [node-task](https://github.com/node-task/spec)
 
 
 ## Solution
@@ -94,7 +95,7 @@ TODO
 
 ### Code
 
-This is some non-functional sample code for what the APIs might look like for writing generators.
+This is non-functional sample code for what the APIs might look like for writing generators.
 
 #### Generator
 
@@ -127,11 +128,15 @@ module.exports = {
 
 ### Testing
 
-Testing Yeoman generators could be much easier.
-Better testing infrastructure means faster iteration which means 
-Testing cannot be an afterthought
+Testing Yeoman generators could (and should!) be much easier.
+Better testing infrastructure means faster iteration which means a better Yeoman.
 
-TODO
+Testing cannot be an afterthought.
+We've seen how hard it has been to add tests in the pre-1.0 world.
+
+Tests also need to be fast.
+Fast tests mean you can watch your files and re-run the tests as you edit.
+To this end, Yeoman APIs should not have to hit the filesystem for (at least) unit tests.
 
 ### Experience
 
@@ -139,7 +144,9 @@ Here is how this flow should feel for generator authors and end users:
 
 #### Generator Author
 
-TODO
+A generator author can choose which things there generator provides.
+Each of these things will have a concrete spec associated with them.
+Then, they only have to adhere to the guidelines for the things they are providing.
 
 #### End User
 
