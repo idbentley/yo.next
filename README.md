@@ -54,11 +54,11 @@ She likes Karma, and decides that she wants to support scaffolding a Gruntfile t
 
 #### Conclusion
 
-In both fo these cases, developers and users had to be experts at using each of the generators.
+In both of these cases, developers and users had to be experts at using each of the generators.
 Yeoman can improve this experience by doing a better job of decoupling and abstracting away the framework and domain specific requisite knowledge to put together all of these pieces.
 
 
-### Build Proccess
+### Build Process
 
 Although Grunt is a great task runner, it has the wrong model for Yeoman.
 This is no fault of Grunt's; it wasn't designed with a tool like Yeoman in mind.
@@ -143,7 +143,7 @@ TODO
 
 #### End User
 
-End users now use a single generator targetting their `Platform` of choice.
+End users now use a single generator targeting their `Platform` of choice.
 They can then select from a list of installed generators, or optionally grab other ones from `npm`.
 
 ## Contributing
